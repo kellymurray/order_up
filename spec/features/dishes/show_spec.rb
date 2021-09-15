@@ -30,9 +30,10 @@ RSpec.describe 'Show Page' do
       end
 
       within ".calorie-count" do
-          expect(page).to have_content("#{@dish1.total_calories}")
+          expect(page).to have_content("320")
+          expect(page).to have_content("#{@dish_1.total_calories}")
       end
-      
+
     end
   end
 end
