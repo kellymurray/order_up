@@ -29,6 +29,9 @@ RSpec.describe 'Show Page' do
         expect(page).to have_content("#{@ingredient_1.name}")
       end
 
+      within ".calorie-count" do
+          expect(page).to have_content("#{@dish1.total_calories}")
+
     end
   end
 end
