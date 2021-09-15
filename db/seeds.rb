@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 @chef = Chef.create(name: 'Cat Cora')
-@chef = Chef.create(name: 'Bobby Flay')
 
 @dish1 = @chef.dishes.create(name: 'Taco', description: 'Corn Sandwich')
 @dish2 = @chef.dishes.create(name: 'Soup', description: 'Broth')
