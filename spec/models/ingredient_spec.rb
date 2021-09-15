@@ -10,4 +10,10 @@ RSpec.describe Ingredient, type: :model do
     it { should have_many(:dishes).through(:dish_ingredients) }
   end
 
+  describe "#top_ingredients" do
+    it "shows top 3 ingredients for that chef" do
+      ingredients = Ingredient.top_ingredients_by_chef(@chef_id)
+    end
+  end
+  
 end
