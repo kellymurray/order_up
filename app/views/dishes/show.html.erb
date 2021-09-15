@@ -4,7 +4,7 @@
     Chef: <%= @dish.chef.name %>
   </section>
 
-  <section class= "ingredient">
+  <section class= "ingredients">
     <h3>Ingredients:</h3>
     <% @dish.dish_ingredients.each do |dish_ingredient| %>
     <p><%= dish_ingredient.ingredient.name %></p>
