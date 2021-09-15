@@ -7,6 +7,4 @@ class Chef < ApplicationRecord
   def unique_ingredients
     ingredients.distinct.pluck(:name)
   end
-
-
 end
