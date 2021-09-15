@@ -29,9 +29,9 @@ RSpec.describe 'Chef show page' do
        expect(current_path).to eq(chef_ingredients_path(@chef))
     end
 
-    # it "When I load the page I see the chef's top 3 ingredients" do
-    #       expect(page).to have_content(@ingredient4.name)
-    #       expect(page).to have_content(@ingredient1.name)
-    #       expect(page).to have_content(@ingredient2.name)
-    #   end
-    # end
+    it "When I load the page I see the chef's top 3 ingredients" do
+          expect(page).to have_content(@ingredient4.name)
+          expect(page).to have_content(@ingredient1.name)
+          expect(page).to have_content(@ingredient2.name)
+      end
+    end
